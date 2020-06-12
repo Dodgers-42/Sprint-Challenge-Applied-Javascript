@@ -1,0 +1,27 @@
+Sprint Questions 
+
+What is the DOM?
+
+	D- Document
+	O- Object
+	M- Model
+	The DOM is an object-based representation of the source HTML document. It is an attempt to convert the structure and content of the HTML document into an object model that can be used by various programs.
+You can Add content to as HTML Document
+Delete content from a HTLM document 
+Change Content on a HTLM document
+
+2. What is an Event - 
+
+JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page. When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
+
+3. What is an Event Listener?
+
+ Event Listener - The addEventListener() method You can add many event handlers of the same type to one element, i.e two "click" events. You can add event listeners to any DOM object not only HTML elements. i.e the window object. The addEventListener() method makes it easier to control how the event reacts to bubbling.
+
+4. Why Would we convert a NodeList into a Array?
+
+NodeLists and Arrays are two different things because NodeLists are actually not a JavaScript API, but a browser API. Things like querySelectorAll() and getElementsByTagName() aren't JavaScript methods, they're browser APIs that let you access DOM elements. You can then manipulate them with JavaScript.
+
+5. What is a Component?
+Components - a small reusable peace of something bigger
+
