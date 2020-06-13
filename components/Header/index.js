@@ -24,7 +24,7 @@ function Header(obj) {
     // update content
     // header.textContent = obj.header;
     headerDate.textContent = obj.date;
-    headerLambdaTimes.textContent = obj.lambdaTimes;
+    headerLambdaTimes.textContent = obj.header;
     headerTemp.textContent = obj.temp;
 
     // appending
@@ -35,9 +35,9 @@ function Header(obj) {
 
     // styling
     header.classList.add('header');
-    headerDate.classList.add('headerDate');
-    headerLambdaTimes.classList.add('headerLambdaTimes');
-    headerTemp.classList.add('headerTemp');
+    headerDate.classList.add('date');
+    // headerLambdaTimes.classList.add('LambdaTimes');
+    headerTemp.classList.add('temp');
 
 
 
