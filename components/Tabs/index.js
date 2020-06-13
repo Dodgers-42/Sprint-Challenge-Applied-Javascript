@@ -7,3 +7,16 @@
 //
 //  Each tab should look like this:
 //    <div class="tab">topic here</div>
+
+let info = {};
+
+console.log(axios);
+axios.get('https://lambda-times-backend.herokuapp.com/topics')
+.then((res) => {
+  info = res.data
+  console.log(info);
+//lambdaInfo(info)
+  let parent = document.querySelector('.cards');
+  parent.appendChild(lambdaInfo(info)); 
+  // parent.appendChild(dodgersInfo(res.data))
+}).catch((err) => console.log("wrong"))
