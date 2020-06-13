@@ -19,8 +19,14 @@ axios.get('https://lambda-times-backend.herokuapp.com/topics')
   console.log(info);
 // lambdaInfo(info)
   let parent = document.querySelector('.topics');
-  parent.appendChild(something(info)) => {
-      
-  }; 
+  res.data.topics.forEach((url) => {
+    parent.appendChild(lambda(url)) 
+  });
+//   for (let i = 0, i < topics.length; i++){
+//       let ... = .addEventListener
+//   };
+//   parent.appendChild(something(info)) => {
+
+//   }; 
 //   parent.appendChild(lambdaInfo(res.data))
 }).catch((err) => console.log("wrong"))
