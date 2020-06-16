@@ -12,18 +12,20 @@
 
 let info = {};
 
-function lambda() {
+function lambda(url) {
     // create
     const topics = document.createElement('div');
     // textContent
-    lambdaTopics.textContent = topics;
+    topics.textContent = url;
     // styling class
-    topics.classList.add('topics');
+    topics.classList.add('tab');
 
     return topics;
 }; 
 
-lambda(topics);
+// lambda(topics);
+const topics = document.querySelector('lambda');
+
 
 // console.log(axios);
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
