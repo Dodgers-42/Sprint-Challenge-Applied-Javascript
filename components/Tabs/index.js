@@ -8,15 +8,28 @@
 //  Each tab should look like this:
 //    <div class="tab">topic here</div>
 
-let lambda = {};
+// let lambda = {};
 
 let info = {};
 
-console.log(axios);
+function lambda() {
+    // create
+    const topics = document.createElement('div');
+    // textContent
+    lambdaTopics.textContent = topics;
+    // styling class
+    topics.classList.add('topics');
+
+    return topics;
+}; 
+
+lambda(topics);
+
+// console.log(axios);
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then((res) => {
   info = res.data.topics
-  console.log(info);
+  console.log(res);
 // lambdaInfo(info)
   let parent = document.querySelector('.topics');
   res.data.topics.forEach((url) => {

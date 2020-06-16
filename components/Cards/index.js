@@ -18,13 +18,13 @@
 // </div>
 //
 // Use your function to create a card for each of the articles and add the card to the DOM.
-let info = {};
+// let info = {};
 
 console.log(axios);
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .then((res) => {
-  info = res.data
-  console.log(info);
+//   info = res.data
+  console.log(res);
 //lambdaInfo(info)
   let parent = document.querySelector('.cards');
   parent.appendChild(lambdaInfo(info)); 
